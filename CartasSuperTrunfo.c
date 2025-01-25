@@ -17,6 +17,41 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
+    printf("cadastro de cartas super trunfo lacalidades:\n");
+
+    char carta1;
+    char carta2; 
+    char carta3;
+
+    double populacao;
+    double area;
+    double PIB;
+
+   carta1=
+
+
+    printf("RIO DE JANEIRO:\n");
+    printf("população: 6.211.000\n");
+    printf("área em 1.200 km²\n");
+    printf("seu PIB e de:359.640.000.000\n");
+
+    carta2=
+
+    printf("São Paulo:\n");
+  
+    printf("área: 1.523 km²\n");
+    printf("população: 11.450.000\n");
+    printf("qual e seu PIB? 828.000.000.000\n");
+    
+
+    carta3=
+    
+    printf("Belo Horizonte:\n");
+    printf("população: 2.316.000\n");
+    printf("área: 331,354 km²\n");
+    printf("seu PIB é de: 105.829.675.053\n");
+    
 
     return 0;
 }
