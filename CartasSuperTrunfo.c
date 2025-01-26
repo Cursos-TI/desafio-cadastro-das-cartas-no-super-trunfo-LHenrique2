@@ -24,17 +24,35 @@ int main() {
     char carta2; 
     char carta3;
 
-    double populacao;
-    double area;
-    double PIB;
+    char estado[30];
+    char cidade[30];
+    long int populacao;
+    float area;
+    float PIB;
 
    carta1=
 
 
-    printf("RIO DE JANEIRO:\n");
-    printf("população: 6.211.000\n");
-    printf("área em 1.200 km²\n");
-    printf("seu PIB e de:359.640.000.000\n");
+    printf("digite um estado:\n");
+    scanf("%s" , &estado);
+    printf("digite uma cidade\n");
+    scanf("%S", &cidade);
+    printf("qual a população:\n");
+    scanf("%d", &populacao);
+    printf("digite a área em km²\n");
+    scanf("%f", &area);
+    printf("digite seu PIB\n");
+    scanf("%f", &PIB);
+
+    printf("Estado: %S\n", &estado);
+   
+    printf("Cidade: %s\n", &cidade);
+    
+    printf("População: %ld\n", &populacao);
+    
+    printf("Área: %f\n", &area);
+    
+    printf("PIB: %f\n", &PIB);
 
     carta2=
 
