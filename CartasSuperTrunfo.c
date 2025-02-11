@@ -20,55 +20,236 @@ int main() {
     
     printf("cadastro de cartas super trunfo lacalidades:\n");
 
-    char carta1;
-    char carta2; 
-    char carta3;
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+     
+          char estado[50];
+          char cidade[50];
+          float area;
+          int populacao;
+          float PIB;
+         
+     
+     
+        printf("*****criando cartas para o super trunfo:******\n");
 
-    char estado[30];
-    char cidade[30];
-    long int populacao;
-    float area;
-    float PIB;
+     printf("digite um estado:\n");
+     gets(estado);
 
-   carta1=
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     double PIBpercapta = PIB/populacao;
+     double superpoder = area + populacao + PIB;
 
 
-    printf("digite um estado:\n");
-    scanf("%s" , &estado);
-    printf("digite uma cidade\n");
-    scanf("%S", &cidade);
-    printf("qual a população:\n");
-    scanf("%d", &populacao);
-    printf("digite a área em km²\n");
-    scanf("%f", &area);
-    printf("digite seu PIB\n");
-    scanf("%f", &PIB);
 
-    printf("Estado: %S\n", &estado);
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+
+printf("---------------------------------------------------------------------------------------------------------------------------\n");
+
+
+     estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = area + populacao + PIB;
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+          
+
+ 
+     estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = (area + populacao + PIB);
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+                    
+    estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = area + populacao + PIB;
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+             
+
+
+ 
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     double PIBpercapta = PIB/populacao;
+     double superpoder = area + populacao + PIB;
+
+
+
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+
+printf("---------------------------------------------------------------------------------------------------------------------------\n");
+
+     estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = area + populacao + PIB;
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+          
+
+ 
+     estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = (area + populacao + PIB);
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+                    
+     estado[50];
+     cidade[50];
+     area;
+     populacao;
+     PIB;
+     
+     printf("digite um estado:\n");
+     gets(estado);
+
+     printf("digite uma cidade deste estado:\n");
+     gets(cidade);
+
+     printf("qual a área desta cidade em km²:\n");
+     scanf("%f", &area);
+
+     printf("qual sua população?\n");
+     scanf("%d", &populacao);
+
+     printf("E qual e seu PIB:\n");
+     scanf("%f", &PIB);
+
+     PIBpercapta = PIB/populacao;
+     superpoder = area + populacao + PIB;
+
+     printf("estado: %s\n, cidade: %s\n, área em km²:%.2f\n, população:%d\n, PIB:%.2f\n, PIB per capta:%.2f\n, super poder:%.2f\n",estado, cidade, area, populacao, PIB, PIBpercapta, superpoder);
+          return 0;
+     };
    
-    printf("Cidade: %s\n", &cidade);
-    
-    printf("População: %ld\n", &populacao);
-    
-    printf("Área: %f\n", &area);
-    
-    printf("PIB: %f\n", &PIB);
-
-    carta2=
-
-    printf("São Paulo:\n");
-  
-    printf("área: 1.523 km²\n");
-    printf("população: 11.450.000\n");
-    printf("qual e seu PIB? 828.000.000.000\n");
-    
-
-    carta3=
-    
-    printf("Belo Horizonte:\n");
-    printf("população: 2.316.000\n");
-    printf("área: 331,354 km²\n");
-    printf("seu PIB é de: 105.829.675.053\n");
     
 
     return 0;
