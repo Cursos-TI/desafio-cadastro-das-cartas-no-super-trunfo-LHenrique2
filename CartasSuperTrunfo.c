@@ -18,7 +18,7 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
-  #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -46,11 +46,11 @@ int main(){
 
   char cidade1[20], cidade2[20], cidade3[20], cidade4[20], cidade5[20], cidade6[20], cidade7[20], cidade8[20], cidade9[20], cidade10[20], cidade11[20], cidade12[20], cidade13[20], cidade14[20], cidade15[20], cidade16[20];
 
-    long int populacao;
+    long int populacao1, populacao2, populacao3, populacao4, populacao5, populacao6, populacao7, populacao8, populacao9, populacao10, populacao11, populacao12, populacao13, populacao14, populacao15, populacao16;
 
-    float area;
+    float area1, area2, area3, area4, area5, area6, area7, area8, area9, area10, area11, area12, area13, area14, area15, area16;
 
-    float PIB;
+    float PIB1, PIB2, PIB3, PIB4, PIB5, PIB6, PIB7, PIB8, PIB9, PIB10, PIB11, PIB12, PIB13, PIB14, PIB15, PIB16;
 
     int pontosturisticos;
 
@@ -68,17 +68,17 @@ int main(){
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao1);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area1);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB1);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -86,12 +86,12 @@ int main(){
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    float pibpercapta = PIB/populacao;
+    float pibpercapta1 = PIB1/populacao1;
 
-    float dpop = populacao/area;
+    float dpop1 = populacao1/area1;
 
 char carta1[300];
-snprintf(carta1, sizeof(carta1), "codigo da cidade: A1\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade1,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta1, sizeof(carta1), "codigo da cidade: A1\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade1,populacao1,area1,PIB1,pontosturisticos,pibpercapta1,dpop1);
    
     printf("%s", carta1);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -108,17 +108,17 @@ snprintf(carta1, sizeof(carta1), "codigo da cidade: A1\n Estado Rio de Janeiro\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao2);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area2);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB2);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -126,12 +126,12 @@ snprintf(carta1, sizeof(carta1), "codigo da cidade: A1\n Estado Rio de Janeiro\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+    float pibpercapta2 = PIB2/populacao2;
 
-    dpop = populacao/area;
+    float dpop2 = populacao2/area2;
 
 char carta2[300];
-snprintf(carta2, sizeof(carta2), "codigo da cidade: A2\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade2,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta2, sizeof(carta2), "codigo da cidade: A2\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade2,populacao2,area2,PIB2,pontosturisticos,pibpercapta2,dpop2);
    
     printf("%s", carta2);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -148,17 +148,17 @@ snprintf(carta2, sizeof(carta2), "codigo da cidade: A2\n Estado Rio de Janeiro\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao3);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area3);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB3);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -166,12 +166,12 @@ snprintf(carta2, sizeof(carta2), "codigo da cidade: A2\n Estado Rio de Janeiro\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta3 = PIB3/populacao3;
 
-    dpop = populacao/area;
+     float dpop3 = populacao3/area3;
 
 char carta3[300];
-snprintf(carta3, sizeof(carta3), "codigo da cidade: A3\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade3,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta3, sizeof(carta3), "codigo da cidade: A3\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade3,populacao3,area3,PIB3,pontosturisticos,pibpercapta3,dpop3);
    
     printf("%s", carta3);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -188,17 +188,17 @@ snprintf(carta3, sizeof(carta3), "codigo da cidade: A3\n Estado Rio de Janeiro\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao4);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area4);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB4);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -206,12 +206,12 @@ snprintf(carta3, sizeof(carta3), "codigo da cidade: A3\n Estado Rio de Janeiro\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta4 = PIB4/populacao4;
 
-    dpop = populacao/area;
+     float dpop4 = populacao4/area4;
 
 char carta4[300];
-snprintf(carta4, sizeof(carta4), "codigo da cidade: A4\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade4,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta4, sizeof(carta4), "codigo da cidade: A4\n Estado Rio de Janeiro\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade4,populacao4,area4,PIB4,pontosturisticos,pibpercapta4,dpop4);
    
     printf("%s", carta4);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -228,17 +228,17 @@ snprintf(carta4, sizeof(carta4), "codigo da cidade: A4\n Estado Rio de Janeiro\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao5);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area5);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB5);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -246,12 +246,12 @@ snprintf(carta4, sizeof(carta4), "codigo da cidade: A4\n Estado Rio de Janeiro\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta5 = PIB5/populacao5;
 
-    dpop = populacao/area;
+     float dpop5 = populacao5/area5;
 
 char carta5[300];
-snprintf(carta5, sizeof(carta5), "codigo da cidade: B1\n estado: São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade5,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta5, sizeof(carta5), "codigo da cidade: B1\n estado: São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade5,populacao5,area5,PIB5,pontosturisticos,pibpercapta5,dpop5);
    
     printf("%s", carta5);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -268,17 +268,17 @@ snprintf(carta5, sizeof(carta5), "codigo da cidade: B1\n estado: São Paulo\n Ci
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao6);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area6);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB6);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -286,12 +286,12 @@ snprintf(carta5, sizeof(carta5), "codigo da cidade: B1\n estado: São Paulo\n Ci
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta6 = PIB6/populacao6;
 
-    dpop = populacao/area;
+     float dpop6 = populacao6/area6;
 
 char carta6[300];
-snprintf(carta6, sizeof(carta6), "codigo da cidade: A2\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade6,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta6, sizeof(carta6), "codigo da cidade: A2\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade6,populacao6,area6,PIB6,pontosturisticos,pibpercapta6,dpop6);
    
     printf("%s", carta6);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -308,17 +308,17 @@ snprintf(carta6, sizeof(carta6), "codigo da cidade: A2\n Estado São Paulo\n Cid
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao7);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area7);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB7);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -326,12 +326,12 @@ snprintf(carta6, sizeof(carta6), "codigo da cidade: A2\n Estado São Paulo\n Cid
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta7 = PIB7/populacao7;
 
-    dpop = populacao/area;
+     float dpop7 = populacao7/area7;
 
 char carta7[300];
-snprintf(carta7, sizeof(carta7), "codigo da cidade: B3\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade7,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta7, sizeof(carta7), "codigo da cidade: B3\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade7,populacao7,area7,PIB7,pontosturisticos,pibpercapta7,dpop7);
    
     printf("%s", carta7);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -348,17 +348,17 @@ snprintf(carta7, sizeof(carta7), "codigo da cidade: B3\n Estado São Paulo\n Cid
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao8);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area8);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB8);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -366,12 +366,12 @@ snprintf(carta7, sizeof(carta7), "codigo da cidade: B3\n Estado São Paulo\n Cid
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta8 = PIB8/populacao8;
 
-    dpop = populacao/area;
+     float dpop8 = populacao8/area8;
 
 char carta8[300];
-snprintf(carta8, sizeof(carta8), "codigo da cidade: B4\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade8,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta8, sizeof(carta8), "codigo da cidade: B4\n Estado São Paulo\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade8,populacao8,area8,PIB8,pontosturisticos,pibpercapta8,dpop8);
    
     printf("%s", carta8);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -388,17 +388,17 @@ snprintf(carta8, sizeof(carta8), "codigo da cidade: B4\n Estado São Paulo\n Cid
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao9);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area9);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB9);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -406,12 +406,12 @@ snprintf(carta8, sizeof(carta8), "codigo da cidade: B4\n Estado São Paulo\n Cid
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta9 = PIB9/populacao9;
 
-    dpop = populacao/area;
+     float dpop9 = populacao9/area9;
 
 char carta9[300];
-snprintf(carta9, sizeof(carta9), "codigo da cidade: C1\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade9,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta9, sizeof(carta9), "codigo da cidade: C1\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade9,populacao9,area9,PIB9,pontosturisticos,pibpercapta9,dpop9);
    
     printf("%s", carta9);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -428,17 +428,17 @@ snprintf(carta9, sizeof(carta9), "codigo da cidade: C1\n Estado Minas Gerais\n C
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao10);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area10);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB10);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -446,12 +446,12 @@ snprintf(carta9, sizeof(carta9), "codigo da cidade: C1\n Estado Minas Gerais\n C
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta10 = PIB10/populacao10;
 
-    dpop = populacao/area;
+     float dpop10 = populacao10/area10;
 
 char carta10[300];
-snprintf(carta10, sizeof(carta10), "codigo da cidade: C2\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade10,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta10, sizeof(carta10), "codigo da cidade: C2\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade10,populacao10,area10,PIB10,pontosturisticos,pibpercapta10,dpop10);
    
     printf("%s", carta10);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -467,17 +467,17 @@ snprintf(carta10, sizeof(carta10), "codigo da cidade: C2\n Estado Minas Gerais\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao11);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area11);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB11);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -485,12 +485,12 @@ snprintf(carta10, sizeof(carta10), "codigo da cidade: C2\n Estado Minas Gerais\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta11 = PIB11/populacao11;
 
-    dpop = populacao/area;
+     float dpop11 = populacao11/area11;
 
 char carta11[300];
-snprintf(carta11, sizeof(carta11), "codigo da cidade: C3\n estado: Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade11,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta11, sizeof(carta11), "codigo da cidade: C3\n estado: Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade11,populacao11,area11,PIB11,pontosturisticos,pibpercapta11,dpop11);
    
     printf("%s", carta11);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -507,17 +507,17 @@ snprintf(carta11, sizeof(carta11), "codigo da cidade: C3\n estado: Minas Gerais\
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao12);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area12);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB12);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -525,12 +525,12 @@ snprintf(carta11, sizeof(carta11), "codigo da cidade: C3\n estado: Minas Gerais\
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta12 = PIB12/populacao12;
 
-    dpop = populacao/area;
+     float dpop12 = populacao12/area12;
 
 char carta12[300];
-snprintf(carta12, sizeof(carta12), "codigo da cidade: C4\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade12,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta12, sizeof(carta12), "codigo da cidade: C4\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade12,populacao12,area12,PIB12,pontosturisticos,pibpercapta12,dpop12);
    
     printf("%s", carta12);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -547,17 +547,17 @@ snprintf(carta12, sizeof(carta12), "codigo da cidade: C4\n Estado Minas Gerais\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao13);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area13);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB13);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -565,12 +565,12 @@ snprintf(carta12, sizeof(carta12), "codigo da cidade: C4\n Estado Minas Gerais\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta13 = PIB13/populacao13;
 
-    dpop = populacao/area;
+     float dpop13 = populacao13/area13;
 
 char carta13[300];
-snprintf(carta13, sizeof(carta13), "codigo da cidade: D1\n Estado Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade13,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta13, sizeof(carta13), "codigo da cidade: D1\n Estado Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade13,populacao13,area13,PIB13,pontosturisticos,pibpercapta13,dpop13);
    
     printf("%s", carta13);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -587,17 +587,17 @@ snprintf(carta13, sizeof(carta13), "codigo da cidade: D1\n Estado Bahia\n Cidade
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao14);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area14);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB14);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -605,12 +605,12 @@ snprintf(carta13, sizeof(carta13), "codigo da cidade: D1\n Estado Bahia\n Cidade
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta14 = PIB14/populacao14;
 
-    dpop = populacao/area;
+     float dpop14 = populacao14/area14;
 
 char carta14[300];
-snprintf(carta14, sizeof(carta14), "codigo da cidade: C2\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade14,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta14, sizeof(carta14), "codigo da cidade: C2\n Estado Minas Gerais\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade14,populacao14,area14,PIB14,pontosturisticos,pibpercapta14,dpop14);
    
     printf("%s", carta14);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -626,17 +626,17 @@ snprintf(carta14, sizeof(carta14), "codigo da cidade: C2\n Estado Minas Gerais\n
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao15);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area15);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB15);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -644,12 +644,12 @@ snprintf(carta14, sizeof(carta14), "codigo da cidade: C2\n Estado Minas Gerais\n
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta15 = PIB15/populacao15;
 
-    dpop = populacao/area;
+     float dpop15 = populacao15/area15;
 
 char carta15[300];
-snprintf(carta15, sizeof(carta15), "codigo da cidade: D3\n estado: Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade15,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta15, sizeof(carta15), "codigo da cidade: D3\n estado: Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade15,populacao15,area15,PIB15,pontosturisticos,pibpercapta15,dpop15);
    
     printf("%s", carta15);
     printf("-----------------------------------------------------------------------------------------------------\n");
@@ -666,17 +666,17 @@ snprintf(carta15, sizeof(carta15), "codigo da cidade: D3\n estado: Bahia\n Cidad
 
     printf("qual a população:\n");
 
-    scanf("%ld", &populacao);
+    scanf("%ld", &populacao16);
     while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite a área em km²\n");
 
-    scanf("%f", &area);
+    scanf("%f", &area16);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("digite seu PIB\n");
 
-    scanf("%f", &PIB);
+    scanf("%f", &PIB16);
      while ((c = getchar()) != '\n' && c != EOF);
 
     printf("Quantos pontos turisticos tem nessa cidade:\n");
@@ -684,20 +684,44 @@ snprintf(carta15, sizeof(carta15), "codigo da cidade: D3\n estado: Bahia\n Cidad
     scanf("%d", &pontosturisticos);
      while ((c = getchar()) != '\n' && c != EOF);
 
-    pibpercapta = PIB/populacao;
+     float pibpercapta16 = PIB16/populacao16;
 
-    dpop = populacao/area;
+     float dpop16 = populacao16/area16;
 
 char carta16[300];
-snprintf(carta16, sizeof(carta16), "codigo da cidade: D4\n Estado Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade16,populacao,area,PIB,pontosturisticos,pibpercapta,dpop);
+snprintf(carta16, sizeof(carta16), "codigo da cidade: D4\n Estado Bahia\n Cidade: %s\n População: %ld\n Área: %.2f\n PIB: %.2f\n pontos turisticos: %d\n PIB per capta : %.2f\n dencidade populaconal: %.2f\n", cidade16,populacao16,area16,PIB16,pontosturisticos,pibpercapta16,dpop16);
    
     printf("%s", carta16);
 printf("-----------------------------------------------------------------------------------------------------\n");
 
   int  jogador = rand() % 16 + 1;
   int maquina = rand() % 16 + 1;
+  int escolha;
 
-switch (jogador)
+    
+printf("escolha um atributo para comparação:\n");
+printf("1.população\n");
+printf("2.Área\n");
+printf("3.PIB\n");
+printf("4.PIB PERCAPTA\n");
+printf("5.DENCIDADE POPULACIONAL\n");
+scanf("%d", &escolha);
+
+switch (escolha)
+{
+case 1:
+    if ()
+    {
+        /* code */
+    }
+    
+    break;
+
+default:
+    break;
+}
+
+switch (jogador) // mostrar carta do jogador escolhida
 {
 case 1:{
     printf("A carta do jogador é:\n");
@@ -830,7 +854,7 @@ case 1:{
 
 }
 
-switch (maquina)
+switch (maquina)  //mostrar carta do computador
 {
 case 1:{
     printf("A carta do computador é:\n");
