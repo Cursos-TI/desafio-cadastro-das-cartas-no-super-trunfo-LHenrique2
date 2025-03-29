@@ -132,9 +132,9 @@ void cadastrar_carta(){
         }
         break;
         case 5:
-        if (carta1.densidade_populacional > carta2.densidade_populacional)
+        if (carta1.densidade_populacional < carta2.densidade_populacional)
         {printf("%s vence! (Densedade Populacional)\n",carta1.densidade_populacional);
-        }else if (carta1.densidade_populacional < carta2.densidade_populacional)
+        }else if (carta1.densidade_populacional > carta2.densidade_populacional)
         {printf("%s vence! (Densedade Populacional)\n",carta2.densidade_populacional);
         }else{
             printf("Empate! (Densedade Populacional)\n");
