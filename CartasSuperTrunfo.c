@@ -26,7 +26,7 @@ void cadastrar_carta(){
         
     
 
-    Carta nova_carta;//cadastro de cartas
+    Carta nova_carta;
 
     printf("cadastrar cartas\n");
     printf("insira um codigo para cidade: ex A1,B2...\n");
@@ -37,6 +37,7 @@ void cadastrar_carta(){
     nova_carta.nome[strcspn(nova_carta.nome, "\n")] = 0; // remover o \n
     printf("digite a população dessa cidade:\n");
     scanf("%d", nova_carta.populacao);
+    while ((c = getchar()) != '\n' && c != EOF);
     printf("Digite a area da cidade:\n");
     scanf("%f", &nova_carta.area);
     while ((c = getchar()) != '\n' && c != EOF);
@@ -46,7 +47,18 @@ void cadastrar_carta(){
     printf("quantos pontos turisticos existem nessa cidade:\n");
     scanf("%d", &nova_carta.pontos_turisticos);
     while ((c = getchar()) != '\n' && c != EOF);
+
+    if (nova_carta.area == 0) {
+        printf("Erro: Área não pode ser zero.\n");
+        return;}
+
+        if (nova_carta.populacao == 0) {
+            printf("Erro: populacão não pode ser zero.\n");
+            return;}
+        
     
+
+
     // Cálculo das novas propriedades
      nova_carta.densidade_populacional = nova_carta.populacao / nova_carta.area;
      nova_carta.pib_per_capita = nova_carta.pib / nova_carta.populacao;
@@ -58,7 +70,7 @@ void cadastrar_carta(){
  
  
     }
-//função jogar
+
     void jogar(){
         if (num_cartas < 2)
         {
@@ -72,6 +84,12 @@ void cadastrar_carta(){
     
         printf("Índice da segunda carta (0 a %d): ", num_cartas - 1);
         scanf("%d", &carta2_idx);
+
+        if (carta1_idx == carta2_idx) {
+            printf("Erro: Você escolheu a mesma carta duas vezes.\n");
+            return;
+        }
+        
 
         if(carta1_idx < 0 || carta1_idx >= num_cartas || carta2_idx < 0 || carta2_idx >= num_cartas){
             printf("indice de carta invalido!\n");
@@ -89,24 +107,25 @@ void cadastrar_carta(){
         printf("5. Densidade populacional\n");
         printf("6. Pontos turisticos\n");
         int escolha;
-        scanf("%d",escolha);
+        scanf("%d",&escolha);
+        while ((c = getchar()) != '\n' && c != EOF);
 
         switch (escolha)
         {
         case 1:
         if (carta1.populacao > carta2.populacao) {
-            printf("%s vence! (População)\n", carta1.nome);
+            printf("%s, %d vence! (População)\n",carta1.nome, carta1.populacao);
         } else if (carta1.populacao < carta2.populacao) {
-            printf("%s vence! (População)\n", carta2.nome);
+            printf("%s, %d vence! (População)\n", carta2.nome, carta2.populacao);
         } else {
             printf("Empate! (População)\n");
         }
         break;
         case 2:
         if(carta1.area > carta2.area){
-            printf("%s vence!(área)\n",carta1.area);
+            printf("%s, %f vence!(área)\n",carta1.nome,carta1.area);
         }else if (carta1.area < carta2.area){
-            printf("%s vence!(área)\n", carta2.area);
+            printf("%s, %f vence!(área)\n",carta2.nome, carta2.area);
         }else{
             printf("Empate! (área)\n");
         }
@@ -114,9 +133,9 @@ void cadastrar_carta(){
 
         case 3:
         if (carta1.pib > carta2.pib){
-            printf("%s vence! (PIB)\n",carta1.pib);
+            printf("%s, %f vence! (PIB)\n",carta1.nome, carta1.pib);
         }else if (carta1.pib < carta2.pib)
-        {printf("%s vence! (PIB)\n", carta2.pib);
+        {printf("%s, %f vence! (PIB)\n",carta2.nome, carta2.pib);
         }else
         {printf("Empate! (PIB)\n");
         }
@@ -124,30 +143,31 @@ void cadastrar_carta(){
         
         case 4:
         if (carta1.pib_per_capita > carta2.pib_per_capita)
-        { printf("%S vence! (PIB per capita)\n",carta1.pib_per_capita);
+        { printf("%s, %f vence! (PIB per capita)\n",carta1.nome, carta1.pib_per_capita);
         } else  if (carta1.pib_per_capita < carta2.pib_per_capita)
-        { printf("%S vence! (PIB per capita)\n",carta2.pib_per_capita);
+        { printf("%s, %f vence! (PIB per capita)\n",carta2.nome, carta2.pib_per_capita);
         }else{
             printf("Empate! (PIB per capita)\n");
         }
         break;
         case 5:
-        if (carta1.densidade_populacional < carta2.densidade_populacional)
-        {printf("%s vence! (Densedade Populacional)\n",carta1.densidade_populacional);
-        }else if (carta1.densidade_populacional > carta2.densidade_populacional)
-        {printf("%s vence! (Densedade Populacional)\n",carta2.densidade_populacional);
+        if (carta1.densidade_populacional > carta2.densidade_populacional)
+        {printf("%s, %f vence! (Densedade Populacional)\n",carta1.nome, carta1.densidade_populacional);
+        }else if (carta1.densidade_populacional < carta2.densidade_populacional)
+        {printf("%s, %f vence! (Densedade Populacional)\n",carta2.nome, carta2.densidade_populacional);
         }else{
             printf("Empate! (Densedade Populacional)\n");
         }
         break;
         case 6:
         if (carta1.pontos_turisticos > carta2.pontos_turisticos)
-        {printf("%s vence! (Pontos Turisticos)\n",carta1.pontos_turisticos);
+        {printf("%s, %d vence! (Pontos Turisticos)\n",carta1.nome, carta1.pontos_turisticos);
         }else if (carta1.pontos_turisticos < carta2.pontos_turisticos)
-        {printf("%s vence! (Pontos Turisticos)\n",carta2.pontos_turisticos);
+        {printf("%s, %d vence! (Pontos Turisticos)\n",carta2.nome, carta2.pontos_turisticos);
         }else{
             printf("Empate! (Pontos Turisticos)\n");
         }
+        break;
 
         
         default: printf("opção invalida!\n");
@@ -158,12 +178,13 @@ void cadastrar_carta(){
             int opcao;
         
             do {
-                printf("\nSuper Trunfo de Cidades do Brasil\n");//menu
+                printf("\nSuper Trunfo de Cidades do Brasil\n");
                 printf("1. Cadastrar carta\n");
                 printf("2. Jogar\n");
                 printf("3. Sair\n");
                 printf("Escolha uma opção: ");
                 scanf("%d", &opcao);
+                while (( c = getchar() ) != '\n' && c != EOF);
         
                 switch (opcao) {
                     case 1:
@@ -186,6 +207,3 @@ void cadastrar_carta(){
     
         
     
-    
-
-
